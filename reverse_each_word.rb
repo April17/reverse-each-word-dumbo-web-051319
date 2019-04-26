@@ -1,8 +1,9 @@
 require "pry"
 def reverse_each_word(string)
   ary = string.split(" ")
+  aryHolder = []
   ary.collect do |str|
-    str.reverse
+    aryHolder << str.reverse
   end
-  return ary.join(" ")
+  return aryHolder.join(" ")
 end
